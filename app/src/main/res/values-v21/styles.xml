@@ -1,0 +1,32 @@
+<resources>>
+
+    <!-- APP DEFAULT -->
+
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+
+        <!-- TRANSITION -->
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <!-- specify enter and exit transitions -->
+        <item name="android:windowEnterTransition">@transition/explode</item>
+        <item name="android:windowExitTransition">@transition/explode</item>
+    </style>
+
+    <!-- CUSTOM -->
+
+    <style name="AppTheme.NoTransition" parent="AppTheme">
+        <!-- NO TRANSITION -->
+        <item name="android:windowContentTransitions">false</item>
+        <item name="android:windowAllowEnterTransitionOverlap">false</item>
+        <item name="android:windowAllowReturnTransitionOverlap">false</item>
+        <!-- remove enter and exit transitions -->
+        <item name="android:windowEnterTransition">@null</item>
+        <item name="android:windowExitTransition">@null</item>
+    </style>
+
+
+</resources>

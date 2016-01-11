@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".controller.activity.MainActivity">
+
+    <item
+        android:id="@+id/action_clear_picture"
+        android:icon="@drawable/ic_clear"
+        android:menuCategory="secondary"
+        android:orderInCategory="1"
+        android:title="clear picture"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_share_picture"
+        android:icon="@drawable/ic_share"
+        android:menuCategory="secondary"
+        android:orderInCategory="1"
+        android:title="share picture"
+        app:showAsAction="ifRoom" />
+</menu>

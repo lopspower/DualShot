@@ -1,0 +1,121 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".controller.activity.CameraActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <!-- Content layout -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layout_camera_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#757575"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:id="@+id/layout_camera_front"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimaryLight"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image_front"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <View
+                    android:id="@+id/first_circle"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/circle" />
+
+                <ImageView
+                    android:id="@+id/image_action"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_camera" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/first_circle"
+                    android:visibility="invisible">
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/circle" />
+
+                    <TextView
+                        android:id="@+id/text_nb_like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="0"
+                        android:textColor="@android:color/white" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <!-- End Content Layout -->
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+

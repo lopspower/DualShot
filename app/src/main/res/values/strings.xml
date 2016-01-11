@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Dual Shot</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="picture">Picture</string>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="photo">Photo</string>
+    <string name="share">share</string>
+</resources>

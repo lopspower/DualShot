@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- APP DEFAULT -->
+
+    <style name="AppTheme" parent="AppTheme.Base" />
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorPrimaryDark</item>
+        <item name="android:textViewStyle">@style/AppTheme.Widget.TextView</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="AppTheme.Widget.TextView" parent="android:Widget.Holo.Light.TextView">
+        <item name="fontPath">fonts/century_gothic.ttf</item>
+    </style>
+
+    <!-- APP COMPAT -->
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- CUSTOM -->
+
+    <style name="AppTheme.NoTransition" parent="AppTheme" />
+
+</resources>

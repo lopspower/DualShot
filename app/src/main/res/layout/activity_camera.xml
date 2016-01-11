@@ -1,0 +1,66 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".controller.activity.CameraActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <!-- Content layout -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/containerBack"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" />
+
+                <FrameLayout
+                    android:id="@+id/containerFront"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_take_picture" />
+
+        </RelativeLayout>
+
+        <!-- End Content Layout -->
+
+    </LinearLayout>
+
+    <!--<android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:animateLayoutChanges="true"
+        android:src="@android:drawable/ic_dialog_email" />-->
+
+</android.support.design.widget.CoordinatorLayout>
+
