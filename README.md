@@ -7,7 +7,7 @@ DualShot
 [![Twitter](https://img.shields.io/badge/Twitter-@LopezMikhael-blue.svg?style=flat)](http://twitter.com/lopezmikhael)
 
 With **DualShot** you take two photos with the front and the back camera, and share both of them in a single image.
-This is sample project that demonstrates the use of the new component [android.hardware.Camera2](http://developer.android.com/reference/android/hardware/camera2/package-summary.html) in the beautiful app.
+This is sample project that demonstrates the use of the new component [android.hardware.Camera2](http://developer.android.com/reference/android/hardware/camera2/package-summary.html) in the beautiful app. You can have a practical example of using this component on a surface TextureView resized and switch on the back and front camera.
 
 
 LICENCE
