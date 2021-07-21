@@ -1,5 +1,3 @@
-<p align="center"><img src="http://i66.tinypic.com/20qe4cj.png"></p>
-
 DualShot
 =========
 [![Platform](https://img.shields.io/badge/platform-android-green.svg)](http://developer.android.com/index.html)
